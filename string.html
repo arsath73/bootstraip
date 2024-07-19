@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>string</title>
+</head>
+<body>
+
+    
+</body>
+<script>
+    const name1 = "virat" //normal string
+    const name2 = 'kolhi'
+    const name3 = new String("virat")//string object
+    const name4 = new String("virat")
+    const name5 = name3
+    // when normal string are compared with ==
+    // the data are compare
+    console.log(name1==name2)//false
+    //when normal string compared with string object with ===
+    //the data and the type are compare
+    console.log(name1==name3)//true
+    //when the object are compare with either == and===
+    //both the object are different indefinite of type
+    console.log(name1===name3)//false
+    console.log(name3===name4)//false
+    console.log(name3==name4)//false
+    console.log(name5===name3)//true
+    console.log(name5==name3)//true
+</script>
+</html>

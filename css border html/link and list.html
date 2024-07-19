@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>list and link </title>
+    <style>
+        /*syntex
+         selector:pseudo-class{
+         propertyt:value;
+         }*/
+        /*a normal,unvisted link */
+
+
+        .fr {
+            list-style-type: lower-roman;
+        }
+
+        ul {
+            list-style-type: decimal-leading-zero;
+
+        }
+
+        .list {
+            list-style-type: circle;
+
+
+        }
+
+        a:link {
+            color: aqua
+        }
+
+        a:visited {
+            color: black
+        }
+
+        a:hover {
+            color: hotpink text darkblue
+        }
+
+        ol.d {
+            list-style-type: lower-alpha;
+        }
+
+        a:link {
+            color: blue;
+
+        }
+
+        a:visited {
+            color: brown;
+        }
+
+        a:hover {
+            color: blueviolet;
+            text-decoration: none;
+            background-color: antiquewhite;
+        }
+
+        a {
+            color: black;
+            background-color: cadetblue;
+        }
+
+        p::first-letter {
+            color: aqua;
+            background-color: aquamarine;
+        }
+        #customers td,
+        #customer th{
+            border:1px solid blue;
+            padding:10px;
+        }
+        #customer tr:nth-child(even){
+            color: black;
+            background-color: blanchedalmond;
+            
+
+        }
+        #customer tr:hover{
+        color: brown;
+            background-color: bisque;
+        
+        }
+    </style>
+</head>
+
+<body>
+    <a href="https://in.pinterest.com/pin/minato-wallpaper-hd--808818414326223791/" target="_blank"> link</a>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio voluptates quasi esse eius numquam in sequi nobis
+        quo excepturi quam repellat, quos dolores natus, corrupti impedit? Nam recusandae aliquam repudiandae!
+
+    </p>
+    <H1>
+        <caption>
+
+            link and lists
+
+        </caption>
+    </H1>
+
+    <p>example of unorder list:</p>
+    <ui class="ab">
+        <li>apple</li>
+        <li>orange</li>
+        <li>mango</li>
+        <li>pineapple</li>
+        <li>banana</li>
+    </ui>
+    <p>example of order list</p>
+
+    <ui class="b">
+        <li>onion</li>
+        <li>tomato</li>
+        <li>potato</li>
+    </ui>
+    <p>example of order drinks</p>
+    <ui class="a">
+        <li>coca cola</li>
+        <li>pepsi</li>
+        <li>red bull</li>
+        <li>7up</li>
+    </ui>
+
+    <table id="customer" border="1" width="1000" height="600">
+        <caption>
+            <tr>
+                <th>day/time</th>
+                <th>8:30-9:30</th>
+                <th>9:30-10:30</th>
+                <th>10:30-11:30</th>
+                <th>11:30-12:30</th>
+            </tr> 
+            <tr>
+                <td>monday</td>
+                <td>sub 1</td>
+                <td>sub 2</td>
+                <td>sub 3</td>
+                <td>sub 4</td>
+            </tr>
+            <tr>
+                <td>tuesday</td>
+                <td>sub 1</td>
+                <td>sub 2</td>
+                <td>sub 3</td>
+                <td>sub 4</td>
+            </tr>
+            <tr>
+                <td>tuesday</td>
+                <td>sub 1</td>
+                <td>sub 2</td>
+                <td>sub 3</td>
+                <td>sub 4</td>
+            </tr>
+            
+            
+
+        </caption>
+
+    </table>
+    
+
+</body>
+
+</html>

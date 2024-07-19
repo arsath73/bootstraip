@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css position property</title>
+    <style>
+        .static {
+            position: static;
+            border: 3px solid blue;
+        }
+
+        .sticky {
+            position: sticky;
+            top: 10px;
+            padding: 5px;
+            background-color: aqua;
+            border: 4px solid green;
+        }
+
+        div.fixed {
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            width: 300px;
+            border: 3px solid violet;
+        }
+
+        div.reletive {
+            position: relative;
+            width: 400px;
+            height: 200px;
+            left: 300px;
+            border: 3px solid greenyellow;
+        }
+
+        div.absolute {
+            position: absolute;
+            top: 10s0px;
+            width: 200px;
+            height: 100px;
+            left: 100px;
+            border: 3px solid orangered;
+            background-color: blueviolet;
+        }
+
+        h3 {
+            outline: 2px solid black;
+            outline-offset: 5px;
+            border: 5px solid red;
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+    <h3>OUTLINE PROPERTY</h3>
+    <div class="fixed">This is fixed element</div>
+
+
+    <h1>css position property</h1>
+
+    <h3>position</h3>
+    <ul>
+        <li>static</li>
+        <li>relative</li>
+        <li>fixed</li>
+        <li>absolute</li>
+        <li>sticky</li>
+    </ul>
+
+    <div class="static">
+        This element has two property
+    </div><Br>
+
+    <div class="sticky">
+
+        This element has contain scrool way
+    </div><br>
+
+    <div class="reletive">
+        <!--position relative is moving but it cannot occupay its original position -->
+        this div element has position:relative;
+
+        <div class="absolute">
+            <!--position absolute is also moving but other elements can accupay its original position -->
+            this div element has position:absolute;
+
+        </div>
+        <div>html</div>
+    </div>
+
+    <p style="font-size: 40px;">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim nobis accusantium laboriosam recusandae dicta
+        delectus officia earum, fuga similique! Ratione, cumque facilis asperiores sequi hic dolores totam recusandae
+        vel. Repudiandae!
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere reprehenderit autem dolorum a accusamus
+        voluptatum? Vel vero maxime molestiae ab. Ducimus, maiores libero laudantium eos a dicta beatae non corporis!
+    </p>
+
+
+
+</body>
+
+</html>

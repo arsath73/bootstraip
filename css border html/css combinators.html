@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css combinators and ps</title>
+    <style>
+        /* div p{            
+          color: rgb(51, 216, 29);
+        } */
+
+        /* p{
+            color: rgb(129, 11, 11);
+        }
+         */
+         /* div p{
+            background-color: cadetblue;
+         } */
+         div p{
+            background-color: aquamarine;
+
+         }
+    </style>
+</head>
+
+<body>
+    <h1>
+        <center>css combinators</center>
+    </h1>
+    <h1>
+        a combinator is somethimg that explain the relationship between selectors
+    </h1>
+    <h2>there are four different combinators in css:</h2>
+    <h3>1.descendant selector(space)</h3>
+    <h3>2.child selector(>)</h3>
+    <h3>3.adjacent sibling selector(+)</h3>
+    <h3>4.general sibling selector(-)</h3>
+
+    <h1>child selector (>)</h1>
+    <P>the child selector select all elements that are the children of a specified element
+
+    </P>
+
+    <h2>adjacent sibling selector</h2>
+    <P>the + selector is used to select an element that is directly after another specific element</p>
+
+
+    <div>
+        <p>paragraph 1</p>
+        <p>paragraph 2</p>
+        <section>
+            not child but descendant
+            <p>paragraph 3</p>
+        </section>
+        <p>paragraph4</p>
+        <p>paragraph5</p>
+        <p>paragraph6</p>
+    </div>
+    <p>paragraph7</p>
+    <p>paragraph8</p>
+
+
+</body>
+
+</html>

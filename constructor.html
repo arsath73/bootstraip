@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>constructor</title>
+</head>
+<body>
+    
+</body>
+<script>
+    function employee(name,dept,age,experience){
+        this.name=name
+        this.dept=dept
+        this.age=age
+        this.experience=experience
+    }
+    // employee.prototype.section = "11"
+    employee.prototype.section = "12:00pm"
+    const e1= new employee("thiru","cleaner","19","4")
+   
+    console.log(e1)
+    console.log(e1.section)
+   
+</script>
+</html>

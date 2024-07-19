@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="device-width, initial-scale=1.0">
+    <title>Mediaquery</title>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            background-color: black;
+
+
+
+        }
+
+        .para {
+            display: block;
+            background-color: red;
+            color: yellow;
+
+        }
+
+        /* @media screen and (min-width:768px)
+        /* min-width 768 below..the below style works */
+        /* {
+            .para {
+                display: none;
+            }
+        }  */
+
+         @media screen and (max-width:768)
+         /* max-width 768 above..thye below style works */
+        {
+            .para {
+                display: none;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- <div class="para">
+        <p>This is a paragrapg tag</p>
+    </div> -->
+    <div></div>
+</body>
+
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex property</title>
+    <style>
+        .flex-container {
+            display: flex;
+            /* flex-direction: column-reverse; */
+            /* flex-direction: column;  */
+            flex-direction: row;
+            /* flex-direction: inherit; */
+            /* flex-direction:row,coloumn,coloumn-reverse,row-reverse */
+            background-color: rgb(0, 0, 0);
+            flex-wrap: wrap;
+
+            /* wrap,wrap reverse...set container height width and set item property padding don't set height width for item property */
+            justify-content: space-between;
+            /* x -axis alignment */
+            /* values: flex-start,flex-end,center,space-around*/
+            align-content: space-around;
+            /* /Y-axis alignment */
+            /* value:flex-start,flex-end,center */
+            /* if ypu with to use align-content we must set height,width,strach for container property */
+            background-color: darkblue;
+            width: 800px;
+            height: 600px;
+        }
+
+        .item {
+            background-color: rgb(162, 70, 249);
+            color: rgb(93, 0, 255);
+            /* width: 100px; */
+            /* height:250px; */
+            padding: 30px;
+            margin: 10px;
+            text-align: center;
+            line-height: 75px;
+            font-size: 30px;
+        } 
+
+         #box1{
+            order: 4;
+
+        }
+        #box2{
+            order: 5;
+        }
+        #box3{
+            order: 1;
+
+        }
+        #box4{
+            order: 2;
+        }
+        #box5{
+            order: 3;
+
+         }
+
+
+
+        
+    </style>
+</head>
+
+<body>
+    <div class="flex-container">
+        <div class="item" id="box1">1</div>
+        <div class="item" id="box2">2</div>
+        <div class="item" id="box3">3</div>
+        <div class="item" id="box4">4</div>
+        <div class="item" id="box5">5</div>
+        <!-- <div class="item">6</div> -->
+        <!-- <div class="item">7</diV> -->
+        <!-- <div class="item">8</div> -->
+        <!-- <div class="item">9</div> -->
+        <!-- <div class="item">10</div> -->
+        <!-- <div class="item">11</div> -->
+        <!-- <div class="item">12</div> -->
+        <!-- <div class="item">13</div> -->
+ 
+
+</body>
+
+</html>

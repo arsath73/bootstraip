@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyframe</title>
+    <style>
+        /* 
+        @keyframes - set of rules
+        
+        animation-name
+        animation-duration
+        animation-delay
+        animation-iteration-count
+        animation-direction
+        animation-timing-function
+        animation-fill-mode
+        animation
+        */
+
+        /* 
+        ----animation-direction----
+        
+        normal-->forward(default)
+        reverse-->reverse direrction(backword)
+        alternate-->forward first then backword
+        alternate-reverse-->backward first,then forward
+        */
+        /* 
+        animation-timing-funtion
+        
+        ease-->slow start,then fast,then end slowly
+        easy-in-->slow start
+        easy-out-->slow end
+        easy-in-out-->slow start and end
+        linear-->same speed from start to end
+        cubic-bezier(n,n,n,n)-->own values(optional)
+        
+        
+        */
+
+        /* 
+        animation-fill-mode
+        
+        none-->defaultvalue
+        forward-->last keyframe value
+        backword-->first keyframe value
+        both-->first keyframe to last keyframe             */
+
+        /* 
+        animation shothand
+        animation:name duration timing-funtion delay interation-count direction fill-mode;  */
+
+        .box {
+            position: relative;
+            border: 3px solid green;
+            left: 200px;
+            top: 20px;
+            width: 30px;
+            height: 200px;
+            font-size: 20px;
+            font-weight: 900;
+            text-align: start;
+            display: table-footer-group;
+            justify-content: center;
+            align-items: center;
+            background-color: cornflowerblue;
+            animation-name: boxcolor;
+            animation-duration: 5s;
+            animation-delay: 2s;
+            animation-timing-function: ease-in;
+            animation-iteration-count: infinite;
+            animation-direction: normal;
+            /* animation-fill-mode: both;    */
+
+
+
+        }
+
+        @keyframes boxcolor {
+            25% {
+                background-color: aqua;
+                left: 500px;
+                top: 20px;
+            }
+
+            50% {
+                background-color: blueviolet;
+                left: 500px;
+                top: 500px;
+            }
+
+            75% {
+                background-color: bisque;
+                left: 20px;
+                top: 500px;
+            }
+
+            100% {
+                background-color: violet;
+                left: 20px;
+                top: 20px;
+            }
+        }
+
+        .div {
+            border: 2px solid black;
+            border-radius: 50%;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="box">
+        Animation box
+    </div>
+    <span class="div">
+        div tag
+    </span>
+</body>
+
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gridtask</title>
+    <!-- <link rel="stylesheet" href="gridtask.html"> -->
+    <style>
+        .grid-container {
+            display: grid;
+            margin: 10px;
+            border: 2px solid goldenrod;
+            background-color: aliceblue;
+            grid-template-columns: repeat(4, 150px);
+            grid-template-rows: 200px 200px 200px 200px;
+            grid-template-areas:
+
+                "one one one one one one"
+                "two  three  four six"
+                "two three five six"
+                "seven seven  seven seven";
+        }
+
+        .item {
+            border: 2px solid rgb(238, 0, 0);
+            text-align: center;
+            background-color: aliceblue;
+            margin: 5px;
+            padding: 30px;
+            /* width: 150px;  */
+            /* height: 100px;  */
+
+        }
+
+
+        #one {
+            grid-area: one;
+        }
+
+        #two {
+            grid-area: two;
+        }
+
+        #three {
+            grid-area: three;
+        }
+
+        #four {
+            grid-area: four;
+        }
+
+        #five {
+            grid-area: five;
+        }
+
+        #six {
+            grid-area: six;
+        }
+
+        #seven {
+            grid-area: seven; 
+     
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid-container">
+        <div class="item" id="one">one</div>
+        <div class="item" id="two">two</div>
+        <div class="item" id="three">three</div>
+        <div class="item" id="four">four</div>
+        <div class="item" id="five">five</div>
+        <div class="item" id="six">six</div>
+        <div class="item" id="seven">seven</div>
+    </div>
+
+
+
+
+</body>
+
+</html>
