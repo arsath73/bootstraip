@@ -30,4 +30,3 @@ console.log(biodate);
 //  Array datatype []
 var fruits=["apple,orange,graphs"];
 console.log(fruits);
-var

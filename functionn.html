@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- <input type="text" id="get" placeholder="first box" onclick="First('box1')"><br>
+    <p id="sam"></p>
+    <input type="text" id="get" placeholder="second box" onclick="First('box2')"><br>
+    <input type="text" id="get" placeholder="third box" onclick="First('box3')"><br> -->
+    <div class="box" id="box1">press</div><br></br>
+    <div class="box" id="box2">click</div><br></br>
+    <div class="box" id="box3">show</div><br></br>
+    <div class="box" id="box4">slide</div><br></br>
+
+</body>
+<script>
+
+    document.getElementById('box1').addEventListener("click", function () {
+        alert("box clicked!")
+
+    })
+    document.getElementById('box2').addEventListener("mouseover", function () {
+        this.style.backgroundColor = "green";
+    })
+    document.getElementById('box3').addEventListener("mouseup", function () {
+        this.style.backgroundColor = "yellow";
+    })
+    document.getElementById('box4').addEventListener("mouseslide", function () {
+        this.style.backgroundColor = "blue";
+    })
+    document.getElementById('box1').addEventListener("click", function () {
+        alert("mouse released")
+
+    })
+    // function First(){
+    //   var a =  document.getElementById("get").disabled
+    //   document.getElementById("sam").innerHTML=a
+
+    //     console.log(a)
+    // }
+
+
+</script>
+
+</html>
